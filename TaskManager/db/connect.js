@@ -1,10 +1,8 @@
 import mongoose from "mongoose";
-const connString = 'mongodb://localhost:27017/TASK-MANAGER';
-
 
 
 const connectDB = (url) =>{
-    return  mongoose.connect(connString)
+    return  mongoose.connect(url)
 }
 
 export default connectDB;

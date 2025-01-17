@@ -6,7 +6,7 @@ const routes = express.Router()
 routes.get("/", getAllTasks)
 routes.post("/", createTasks)
 routes.get("/:id", getTask)
-routes.put("/:id", updateTask)
+routes.patch("/:id", updateTask)
 routes.delete("/:id", deleteTask)
 
 
